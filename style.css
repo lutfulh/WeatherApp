@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Audiowide', cursive;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width: 25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    background-size: cover;
+    background-position: top;  
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.clock {
+    font-size: 5rem;
+}
+
+#city {
+    font-size: 6rem;
+    border-bottom: .2rem solid white;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 25em) {
+    .weather {
+        flex-direction: column;
+    }
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    color: white;
+}
+
+.temperature-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.temperature {
+    font-size: 6rem;
+}
+
+.temp-unit {
+    font-size: 4rem;
+}
+
+.flavor {
+    margin-bottom: 2rem;
+}
+
+.flavor-text {
+    font-size: 2rem;
+}
+
+.unit-change-box {
+    margin-top: 1.5rem;
+}
+
+#unit-change {
+    cursor: pointer;
+    font-size: 3rem;
+}
